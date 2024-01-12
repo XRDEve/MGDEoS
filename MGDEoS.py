@@ -9,7 +9,7 @@ matplotlib.use('TkAgg')  # or another backend of your choice
 
 # Import & read data
 np.random.seed(9845)                                                      # For reproductivity; controls random number generation.
-data = np.loadtxt("DymshitsPVT2014.txt")                                                     # Replace with your actual data file path.
+data = np.loadtxt("file.txt")                                                     # Replace with your actual data file path.
 data = data[data[:, 2].argsort()]
 
 P_exp = data[:, 0]
